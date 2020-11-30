@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	height: 100vh;
 	margin: 0;
@@ -178,6 +183,11 @@ section {
 .portfolio-container a img {
 	border-radius: 1em;
 	margin-bottom: 2em;
+}
+
+.contact {
+	background: #f7f7f7;
+	color: #000;
 }
 
 .footer {
