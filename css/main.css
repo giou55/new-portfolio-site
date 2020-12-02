@@ -24,6 +24,10 @@ img {
 	width: 100%;
 }
 
+.bold-text {
+	font-weight: bold;
+}
+
 .nav-container {
 	background: #6700ee;
 }
@@ -138,7 +142,7 @@ section {
 }
 
 .skills {
-	background: #ff64cb;
+	background: #00f7ff;
 }
 
 .skills-container ul li {
@@ -157,15 +161,15 @@ section {
 }
 
 .skills-container ul li .icon-container.one {
-	width: 50px;
+	width: 40px;
 }
 
 .skills-container ul li .icon-container.two {
-	width: 100px;
+	width: 110px;
 }
 
 .skills-container ul li .icon-container.three {
-	width: 60px;
+	width: 70px;
 }
 
 .skills-container ul li .skill-title {
@@ -177,7 +181,7 @@ section {
 }
 
 .portfolio {
-	background: #f7f7f7;
+	background: #f1f1f1;
 }
 
 .portfolio-container a img {
@@ -185,9 +189,16 @@ section {
 	margin-bottom: 2em;
 }
 
+.about {
+	background: #fff;
+}
+
+.about-container a img {
+	margin-bottom: 2em;
+}
+
 .contact {
-	background: #f7f7f7;
-	color: #000;
+	background: #f1f1f1;
 }
 
 .footer {
@@ -197,18 +208,21 @@ section {
 
 @media only screen and (min-width: 800px) {
 	.featured,
-	.portfolio {
+	.portfolio,
+	.about {
 		text-align: left;
 	}
 	.featured,
-	.portfolio-container {
+	.portfolio-container,
+	.about-container {
 		display: -ms-grid;
 		display: grid;
 		-ms-grid-columns: 40% auto;
 		grid-template-columns: 40% auto;
 	}
 	.left,
-	.portfolio-left {
+	.portfolio-left,
+	.about-left {
 		display: -ms-grid;
 		display: grid;
 		place-content: center;
@@ -233,6 +247,12 @@ section {
 		padding-top: 7em;
 	}
 	.portfolio-container img {
+		margin-left: 2em;
+	}
+	.about {
+		padding-top: 7em;
+	}
+	.about-container img {
 		margin-left: 2em;
 	}
 }
@@ -270,11 +290,11 @@ section {
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 		justify-content: space-between;
-		width: 7em;
+		width: 8em;
 		float: right;
 	}
 	.social-header ul img {
-		width: 20px;
+		width: 26px;
 	}
 	.hero {
 		display: -ms-grid;
@@ -306,6 +326,10 @@ section {
 		float: right;
 		max-width: 500px;
 	}
+	.about img {
+		float: right;
+		max-width: 300px;
+	}
 }
 
 @media only screen and (min-width: 1250px) {
@@ -335,6 +359,10 @@ section {
 	}
 	.hero .content {
 		padding: 9em 20em 6em 20em;
+	}
+	.about,
+	.contact {
+		padding: 6em 30em 4em 30em;
 	}
 }
 
