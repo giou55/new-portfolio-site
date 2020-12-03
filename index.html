@@ -104,7 +104,7 @@
 						width="172"
 						height="172"
 						rx="19"
-						transform="translate(1277 289)"
+						transform="translate(1278 289)"
 						fill="#6e00ff"
 					/>
 					<rect
@@ -113,7 +113,7 @@
 						width="172"
 						height="172"
 						rx="86"
-						transform="translate(1277 461)"
+						transform="translate(1278 461)"
 						fill="#ff64cb"
 					/>
 					<rect
@@ -131,7 +131,7 @@
 						width="172"
 						height="172"
 						rx="19"
-						transform="translate(1277 633)"
+						transform="translate(1278 633)"
 						fill="#6e00ff"
 					/>
 					<rect
@@ -343,39 +343,128 @@
 					><img src="images/myphoto.png" alt="giorgos giourmetakis"
 				/></a>
 			</div>
-			<!-- <p class="featured-title">About Me</p>
-			<div class="left"></div>
-			<p>
-				Hi! I am Giorgos Giourmetakis, a full-stack web developer based
-				in Athens, Greece. For over 6 years I’ve been working on various
-				projects involving both front-end and back-end development. I
-				enjoy challenging tasks and look forward to interesting and
-				innovative projects.
-			</p>
-			<p>
-				When not writing code, I really enjoy learning new stuff,
-				cooking delicious food, listening my favorite music and walking
-				in the city :).
-			</p> -->
 		</section>
 
 		<section class="contact" id="contact">
 			<p class="featured-title">Contact</p>
-			<p>
-				Hi! I am Giorgos Giourmetakis, a full-stack web developer based
-				in Athens, Greece. For over 6 years I’ve been working on various
-				projects involving both front-end and back-end development. I
-				enjoy challenging tasks and look forward to interesting and
-				innovative projects.
-			</p>
-			<p>
-				When not writing code, I really enjoy learning new stuff,
-				cooking delicious food, listening my favorite music and walking
-				in the city :).
-			</p>
+			<form id="contact">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input
+						type="text"
+						class="form-control"
+						name="name"
+						id="name"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						class="form-control"
+						name="email"
+						id="email"
+						name="email"
+					/>
+				</div>
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<textarea
+						class="form-control"
+						rows="5"
+						name="message"
+						id="message"
+						style="resize: none"
+					></textarea>
+				</div>
+				<div id="msg"></div>
+				<button id="submit-btn">SEND</button>
+			</form>
 		</section>
 
-		<section class="footer">Footer</section>
+		<section class="footer">
+			<div class="footer-inner">
+				&copy;
+				<script type="text/javascript">
+					document.write(new Date().getFullYear());
+				</script>
+				giorgos giourmetakis | full-stack web developer | Athens, Greece
+			</div>
+			<svg
+				class="footer-design"
+				width="686"
+				height="288"
+				viewBox="0 0 686 688"
+			>
+				<g id="blockdesign" transform="translate(-935 -289)">
+					<rect
+						data-name="Rectangle 2"
+						width="172"
+						height="172"
+						rx="19"
+						transform="translate(1278 289)"
+						fill="#6e00ff"
+					/>
+					<rect
+						data-name="Rectangle 10"
+						width="172"
+						height="172"
+						rx="86"
+						transform="translate(1278 461)"
+						fill="#ff64cb"
+					/>
+					<rect
+						data-name="Rectangle 8"
+						width="172"
+						height="172"
+						rx="19"
+						transform="translate(1449 461)"
+						fill="#e5d5fa"
+					/>
+					<rect
+						data-name="Rectangle 5"
+						width="172"
+						height="172"
+						rx="19"
+						transform="translate(1278 633)"
+						fill="#6e00ff"
+					/>
+					<rect
+						data-name="Rectangle 3"
+						width="172"
+						height="172"
+						rx="19"
+						transform="translate(1107 461)"
+						fill="#fff"
+					/>
+					<rect
+						data-name="Rectangle 9"
+						width="172"
+						height="172"
+						rx="86"
+						transform="translate(1107 633)"
+						fill="#00f7ff"
+					/>
+					<rect
+						data-name="Rectangle 7"
+						width="172"
+						height="172"
+						rx="19"
+						transform="translate(935 633)"
+						fill="#fff"
+						opacity="0.17"
+					/>
+					<rect
+						data-name="Rectangle 4"
+						width="172"
+						height="172"
+						rx="19"
+						transform="translate(1107 805)"
+						fill="#fff"
+					/>
+				</g>
+			</svg>
+		</section>
 
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"

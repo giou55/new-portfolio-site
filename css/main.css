@@ -63,7 +63,8 @@ header ul a {
 }
 
 .social-header,
-.hero-design {
+.hero-design,
+.footer-design {
 	display: none;
 }
 
@@ -142,7 +143,7 @@ section {
 }
 
 .skills {
-	background: #00f7ff;
+	background: #6e00ff;
 }
 
 .skills-container ul li {
@@ -202,8 +203,17 @@ section {
 }
 
 .footer {
+	background: #f1f1f1;
+	position: relative;
+	color: #f1f1f1;
+	padding: 0;
+	padding-top: 50px;
+	overflow: hidden;
+}
+.footer-inner {
 	background: #6700ee;
-	color: #fff;
+	padding: 70px;
+	font-size: 0.9rem;
 }
 
 @media only screen and (min-width: 800px) {
@@ -239,7 +249,7 @@ section {
 	.skills-container ul {
 		display: -ms-grid;
 		display: grid;
-		-ms-grid-columns: (auto) [3];
+		-ms-grid-columns: repeat(3, auto);
 		grid-template-columns: repeat(3, auto);
 		grid-gap: 1em;
 	}
@@ -330,6 +340,13 @@ section {
 		float: right;
 		max-width: 300px;
 	}
+	.footer-design {
+		position: absolute;
+		display: unset;
+		right: -120px;
+		bottom: -90px;
+		width: 30%;
+	}
 }
 
 @media only screen and (min-width: 1250px) {
@@ -393,4 +410,3 @@ section {
 		transform: translate(262px, 830px);
 	}
 }
-/*# sourceMappingURL=main.css.map */
