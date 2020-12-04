@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Giorgos Giourmetakis - Web Developer</title>
-		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<div class="nav-container">
-			<header>
+			<header class="header-desktop">
 				<a href="index.html" class="logo">Giorgos Giourmetakis</a>
 
 				<nav>
@@ -20,6 +20,30 @@
 					</ul>
 				</nav>
 			</header>
+
+			<header class="header-mobile">
+				<a href="index.html" class="logo">Giorgos Giourmetakis</a>
+				<button class="nav-toggle" aria-label="toggle navigation">
+					<span class="hamburger"></span>
+				</button>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#portfolio" class="nav__link">My work</a>
+						</li>
+						<li class="nav__item">
+							<a href="#skills" class="nav__link">My skills</a>
+						</li>
+						<li class="nav__item">
+							<a href="#about" class="nav__link">About me</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
 			<div class="social-header">
 				<ul>
 					<li>
@@ -534,5 +558,7 @@
 				stagger: 0.6,
 			});
 		</script>
+
+		<script src="javascript/index.js"></script>
 	</body>
 </html>
