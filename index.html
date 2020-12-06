@@ -13,8 +13,8 @@
 
 				<nav>
 					<ul>
-						<li><a href="#portfolio">My work</a></li>
 						<li><a href="#skills">My skills</a></li>
+						<li><a href="#portfolio">My work</a></li>
 						<li><a href="#about">About me</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
@@ -29,10 +29,10 @@
 				<nav class="nav">
 					<ul class="nav__list">
 						<li class="nav__item">
-							<a href="#portfolio" class="nav__link">My work</a>
+							<a href="#skills" class="nav__link">My skills</a>
 						</li>
 						<li class="nav__item">
-							<a href="#skills" class="nav__link">My skills</a>
+							<a href="#portfolio" class="nav__link">My work</a>
 						</li>
 						<li class="nav__item">
 							<a href="#about" class="nav__link">About me</a>
@@ -138,7 +138,7 @@
 						height="172"
 						rx="86"
 						transform="translate(1278 461)"
-						fill="#ff64cb"
+						fill="#e79c5f"
 					/>
 					<rect
 						class="square-anim"
@@ -225,33 +225,38 @@
 					<li class="transition2">
 						<div class="icon-container one">
 							<img
-								src="images/icon2-angular.svg"
-								alt="Angular Icon"
+								src="images/icon-uidesign.png"
+								alt="UI UX Design Icon"
 							/>
 						</div>
-						<p class="skill-title">Angular Development</p>
-						<p class="featured-desc skill-desc">
-							Architecting and building web applications and SPAs
-							with Angular, JavaScript/TypeScript.
-						</p>
-					</li>
-					<li class="transition2">
-						<div class="icon-container two">
-							<img
-								src="images/icon-frontend.svg"
-								alt="Frontend Development Icon"
-							/>
-						</div>
-						<p class="skill-title">Frontend Development</p>
+						<p class="skill-title">UI UX Design</p>
 						<p class="featured-desc skill-desc">
 							Building complex, interactive user interfaces with
 							high level UX for both web and mobile.
 						</p>
 					</li>
 					<li class="transition2">
+						<div class="icon-container two">
+							<img
+								src="images/icon2-angular.svg"
+								alt="Angular Icon"
+							/>
+							<img src="images/icon-react.svg" alt="React Icon" />
+						</div>
+						<p class="skill-title">Frontend Development</p>
+						<p class="featured-desc skill-desc">
+							Architecting and building web applications and SPAs
+							with Angular, React, JavaScript/TypeScript.
+						</p>
+					</li>
+					<li class="transition2">
 						<div class="icon-container three">
 							<img
 								src="images/icon-node.svg"
+								alt="Backend Development Icon"
+							/>
+							<img
+								src="images/icon-express.svg"
 								alt="Backend Development Icon"
 							/>
 						</div>
@@ -408,11 +413,20 @@
 
 		<section class="footer">
 			<div class="footer-inner">
-				&copy;
-				<script type="text/javascript">
-					document.write(new Date().getFullYear());
-				</script>
-				giorgos giourmetakis | full-stack web developer | Athens, Greece
+				<div class="footer-text">
+					&copy;
+					<script type="text/javascript">
+						document.write(new Date().getFullYear());
+					</script>
+					giorgos giourmetakis | full-stack web developer | Athens,
+					Greece
+				</div>
+
+				<div class="footer-icon-link">
+					<a href="https://icons8.com/icon/49407/web-design"
+						>UI UX Design icon by Icons8</a
+					>
+				</div>
 			</div>
 			<svg
 				class="footer-design"
@@ -435,7 +449,7 @@
 						height="172"
 						rx="86"
 						transform="translate(1278 461)"
-						fill="#ff64cb"
+						fill="#e79c5f"
 					/>
 					<rect
 						data-name="Rectangle 8"
