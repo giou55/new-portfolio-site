@@ -271,25 +271,10 @@ section {
 	margin: 0 auto;
 }
 
-.skills-container ul li .icon-container.one {
-	display: flex;
-	width: 50px;
-	height: 50px;
-	margin: 30px auto;
-}
-
-.skills-container ul li .icon-container.two {
-	display: flex;
-	width: 100px;
-	height: 50px;
-	margin: 30px auto;
-}
-
+.skills-container ul li .icon-container.one,
+.skills-container ul li .icon-container.two,
 .skills-container ul li .icon-container.three {
-	display: flex;
-	width: 100px;
-	height: 50px;
-	margin: 30px auto;
+	width: 50px;
 }
 
 .skills-container ul li .skill-title {
