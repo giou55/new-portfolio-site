@@ -391,40 +391,29 @@
 		</section>
 
 		<section class="contact" id="contact">
-			<p class="featured-title">Contact</p>
-			<form id="contact">
-				<div class="form-group">
-					<label for="name">Name:</label>
-					<input
-						type="text"
-						class="form-control"
-						name="name"
-						id="name"
-					/>
-				</div>
-				<div class="form-group">
-					<label for="email">Email:</label>
-					<input
-						type="email"
-						class="form-control"
-						name="email"
-						id="email"
-						name="email"
-					/>
-				</div>
-				<div class="form-group">
-					<label for="message">Message:</label>
+			<p class="featured-title">Get In Touch</p>
+			<p>
+				Do you have an interesting project I can help with? Feel free to
+				reach out to me by using the form below.
+			</p>
+			<div class="form-container">
+				<form action="/action_page.php">
+					<label for="fname">Name</label>
+					<input type="text" id="name" name="name" />
+
+					<label for="lname">Email</label>
+					<input type="email" id="email" name="email" />
+
+					<label for="subject">Message</label>
 					<textarea
-						class="form-control"
-						rows="5"
-						name="message"
-						id="message"
-						style="resize: none"
+						id="subject"
+						name="subject"
+						style="height: 200px"
 					></textarea>
-				</div>
-				<div id="msg"></div>
-				<button id="submit-btn">SEND</button>
-			</form>
+
+					<input type="submit" value="Send Message" />
+				</form>
+			</div>
 		</section>
 
 		<section class="footer">
@@ -525,69 +514,8 @@
 			integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
 			crossorigin="anonymous"
 		></script>
+
 		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
-
-		<script>
-			gsap.registerPlugin(ScrollTrigger);
-			var tl = gsap.timeline();
-
-			tl.from(".content", {
-				y: "-30%",
-				opacity: 0,
-				duration: 2,
-				ease: Power4.easeOut,
-			});
-			tl.from(
-				".stagger1",
-				{
-					opacity: 0,
-					y: -50,
-					stagger: 0.3,
-					ease: Power4.easeOut,
-					duration: 2,
-				},
-				"-=1.5"
-			);
-			tl.from(
-				".hero-design",
-				{
-					opacity: 0,
-					y: 50,
-					ease: Power4.easeOut,
-					duration: 1,
-				},
-				"-=2"
-			);
-
-			gsap.from(".square-anim", {
-				stagger: 0.2,
-				scale: 0.1,
-				duration: 1,
-				ease: Back.easeOut.config(1.7),
-			});
-
-			gsap.from(".transition2", {
-				scrollTrigger: {
-					trigger: ".transition2",
-					start: "top bottom",
-				},
-				y: 50,
-				opacity: 0,
-				duration: 1.2,
-				stagger: 0.3,
-			});
-
-			gsap.from(".transition3", {
-				scrollTrigger: {
-					trigger: ".transition3",
-					start: "top center",
-				},
-				y: 50,
-				opacity: 0,
-				duration: 1.2,
-				stagger: 0.6,
-			});
-		</script>
 
 		<script src="js/index.js"></script>
 	</body>

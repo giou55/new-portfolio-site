@@ -34,6 +34,10 @@ img {
 	outline: none;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 /* header */
 
 .nav-container {
@@ -349,6 +353,53 @@ section {
 .contact {
 	background: #fff;
 }
+
+/* contact form */
+
+.form-container {
+	border-radius: 5px;
+	background-color: #e2e0e5;
+	padding: 40px;
+	margin: 0 auto;
+	max-width: 500px;
+	text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type="submit"] {
+	background-color: #fe5e55;
+	color: white;
+	width: 100%;
+	padding: 12px 20px;
+	font-size: 1.1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border-color: #fe5e55;
+}
+
+input[type="submit"]:hover {
+	background-color: #fc5148;
+}
+
+/* footer */
 
 .footer {
 	background: #fff;
